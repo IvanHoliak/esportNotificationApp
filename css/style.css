@@ -1,0 +1,199 @@
+body{
+	background-color: black;
+}
+img{
+	width: 50px;
+	height: 50px;
+}
+hr{
+	margin: 2px;
+}
+h4{
+	font-size: 20px;
+	margin: 0px;
+  text-align: center;
+  color: black;
+}
+p{
+	margin: 0px;
+	font-weight: 700;
+  color: black;
+  width: inherit;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+}
+.modal{
+  margin-top: 30px;
+}
+.swal2-container{
+  margin-top: 20px;
+}
+.event_header, .live_event_header{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+  margin-bottom: 10px;
+}
+.event_footer, .live_event_footer, .team1, .team2, .matchTeams, .liveMatchTeams{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.timeLast{
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    background-color: yellow;
+    font-weight: 700;
+}
+.hr-header{
+  margin: 20px 5px;
+}
+.btn_csgo{
+  width: 70px; 
+  height: 50px; 
+  border-radius: 5px 0 0 5px; 
+  background: white url(../icon/csgo_logo2.png) center no-repeat; 
+  background-size: 40px 30px;
+}
+.btn_dota2{
+  width: 70px; 
+  height: 50px; 
+  border-radius: 0 5px 5px 0; 
+  background: white url(../icon/dota2_logo.png) center no-repeat; 
+  background-size: 40px 40px;
+}
+
+.title-header{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  margin: 0;
+  padding: 5px;
+}
+.toggle_switch{
+  width: 100px;
+  height: 45px;
+  position: relative;
+}
+
+input[type="checkbox"].switch_3{
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  outline: 0;
+  z-index: 1;
+}
+
+svg.checkbox .outer-ring{
+  stroke-dasharray: 375;
+  stroke-dashoffset: 375;
+  -webkit-animation: resetRing .35s ease-in-out forwards;
+          animation: resetRing .35s ease-in-out forwards;
+}
+
+input[type="checkbox"].switch_3:checked + svg.checkbox .outer-ring{
+  -webkit-animation: animateRing .35s ease-in-out forwards;
+          animation: animateRing .35s ease-in-out forwards;
+}
+
+input[type="checkbox"].switch_3:checked + svg.checkbox .is_checked{
+  opacity: 1;
+  -webkit-transform: translateX(0) rotate(0deg);
+          transform: translateX(0) rotate(0deg);
+}
+
+input[type="checkbox"].switch_3:checked + svg.checkbox .is_unchecked{
+  opacity: 0;
+  -webkit-transform: translateX(-200%) rotate(180deg);
+          transform: translateX(-200%) rotate(180deg);
+}
+
+
+svg.checkbox{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+svg.checkbox .is_checked{
+  opacity: 0;
+  fill: yellow;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translateX(200%) rotate(45deg);
+          transform: translateX(200%) rotate(45deg);
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+svg.checkbox .is_unchecked{
+  opacity: 1;
+  fill: #fff;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translateX(0) rotate(0deg);
+          transform: translateX(0) rotate(0deg);
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+@-webkit-keyframes animateRing{
+  to{
+    stroke-dashoffset: 0;
+    stroke: #b0aa28;
+  }
+}
+
+@keyframes animateRing{
+  to{
+    stroke-dashoffset: 0;
+    stroke: #b0aa28;
+  }
+}
+
+@-webkit-keyframes resetRing{
+  to{
+    stroke-dashoffset: 0;
+    stroke: #233043;
+  }
+}
+
+@keyframes resetRing{
+  to{
+    stroke-dashoffset: 0;
+    stroke: #233043;
+  }
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black; 
+  background-color: white;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #665050; 
+}
